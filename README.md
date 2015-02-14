@@ -11,8 +11,8 @@ with a React-style front-end, a REST api server, and all of the schema required 
 
 here's what the database schema portion would look like:
 
-   # The student we're dealing with.
-   node Student {
+    # The student we're dealing with.
+    node Student {
        @vendorid:  String # iOS device's reported id
             name:  String
           emails: [String] # May have many emails
@@ -23,6 +23,6 @@ here's what the database schema portion would look like:
                hash:  String
                salt:  String
             }
-   }
+    }
 
 
