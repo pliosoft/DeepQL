@@ -1,11 +1,6 @@
 -- | Attempto Controlled English parser and printer.
 
-module Database.DQL
-  (module Database.DQL.Types.Syntax
-  ,module Database.DQL.Tokenizer
-  ,module Database.DQL.Types.Tokens)
-  where
-
-import Database.DQL.Tokenizer
-import Database.DQL.Types.Tokens
-import Database.DQL.Types.Syntax
+module Database.DQL (module X) where
+   import Database.DQL.Tokenizer as X
+   import Database.DQL.Types.Tokens as X
+   import Database.DQL.Types.Syntax as X

@@ -13,15 +13,21 @@ module Database.DQL.Types.Syntax where
 
    data Index = Unindexed | Indexed
     deriving (Show,Eq)
+
    data Presence = Required | Optional
     deriving (Show,Eq)
+
    data Visibility = Visible | Hidden
     deriving (Show,Eq)
 
-   data Field = Field Index Presence Visibility Text Type 
+   data Field = Field Index Presence Visibility Text Type
     deriving (Show,Eq)
 
-   data Type = IntegerT | StringT | UserT Text | ListT Type | ObjT [Field]
+   data Type = IntegerT
+             | StringT
+             | UserT Text
+             | ListT Type
+             | ObjT  [Field]
     deriving (Show,Eq)
 
 

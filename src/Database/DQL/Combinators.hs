@@ -4,7 +4,6 @@
 module Database.DQL.Combinators where
 
    import           Database.DQL.Types.Tokens
-
    import           Data.Text (Text)
    import qualified Data.Text as T
    import           Text.Parsec.Pos
